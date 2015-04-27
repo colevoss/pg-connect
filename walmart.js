@@ -6,6 +6,8 @@ var server = new Hapi.Server();
 var pg = require('pg');
 server.connection({ port: PORT });
 
+var argv = require('minimist')(process.argv.slice(2));
+
 server.route({
   method: 'GET',
   path: '/{path*}',
@@ -22,7 +24,7 @@ server.route({
   method: 'GET',
   path: '/databases',
   handler: function (request, reply) {
-    var conString = 'postgres:://colevoss:pass@localhost/postgres';
+    var conString = 'postgres:://' + argv.u + ':' + argv.p + '@localhost/postgres';
 
     var pgClient = new pg.Client({
       user: 'colevoss',
