@@ -1,0 +1,43 @@
+
+header {
+  text-align: center;
+}
+
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+header .title {
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+header .subtitle {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.database-item.list-group-item {
+  padding-top: 10px;
+}
+
+table.table-list-table td{
+  font-size: 12px;
+  padding: 3px;
+}
+
+.table-list-container {
+  max-height: 83vh;
+  overflow-y: auto;
+}

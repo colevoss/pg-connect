@@ -1,0 +1,3 @@
+module.exports = {
+  DATABASE_RETRIEVE_ALL: 'DATABASE_RETRIEVE_ALL'
+};
