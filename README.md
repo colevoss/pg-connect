@@ -11,8 +11,8 @@ All sitting on top of [Node.js](http://nodejs.org/).
 
 Start pg-Connect:
 ```
-npm start
+npm start -u <postgres username> -p <postgres password>
 ```
 
 
-Point your browser to `http://localhost:8000` to see the your postgress databases!
+Point your browser to `http://localhost:8000` to see the your postgres databases!
